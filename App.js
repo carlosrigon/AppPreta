@@ -5,6 +5,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { estilo } from './src/style/estilos';
 import Icones from 'react-native-vector-icons/Ionicons';
+import { Notification} from './src/componentes/NotificationService';
+
+// Declaração de constantes
+const notificador = Notification;
 
 function LinkFace() {
   Linking.openURL('https://www.facebook.com/ines.rodrigues.5011')
@@ -199,6 +203,12 @@ function TelaStackProdutos() {
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+  componentDidMount() {
+    notificador.configurar()
+    notificador.criarCanal()
+    notificador.agendarNotificacoes()
+  };
+  
   return (
     <NavigationContainer>
       <Tab.Navigator screenOptions={{ headerShown: false,  tabBarInactiveTintColor: 'white', tabBarStyle: {backgroundColor: 'black'} }}>

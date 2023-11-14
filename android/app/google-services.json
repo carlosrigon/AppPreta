@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1095602681409",
+    "project_id": "pretaartsnotification",
+    "storage_bucket": "pretaartsnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095602681409:android:5f34a5ba1e718d3f9f78c0",
+        "android_client_info": {
+          "package_name": "com.apppreta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnze7VfQULKrALCRzu6SkOms73TaAKPwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

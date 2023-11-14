@@ -11,6 +11,13 @@ public class MainActivity extends ReactActivity {
    * rendering of the component.
    */
   @Override
+  public void onNewIntent(Intent intent) {
+     
+      super.onNewIntent(intent);
+     
+  }
+  
+  @Override
   protected String getMainComponentName() {
     return "appPreta";
   }
